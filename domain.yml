@@ -1,0 +1,54 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - askAboutYou
+  - developAChatbot
+  - thanks
+
+
+responses:
+
+  utter_expert:
+  - text: "I am a chatbot expert!!"
+
+  utter_price:
+  - text: "I can help you to develop a chat bot for you in free!!"
+
+  utter_greet:
+  - text: "Nice to you meet you. How can I help?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/XzYzmjU.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Talk to you later!"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_thanks:
+  - text: "My pleasure."
+
+  utter_affirm:
+  - text: "Done !"
+
+  utter_default:
+  - text: "I'm Sorry, I didn't get that"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
